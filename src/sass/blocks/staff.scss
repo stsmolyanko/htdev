@@ -1,0 +1,110 @@
+.staff {
+  position: relative;
+  z-index: 10;
+  padding-left: 20px;
+  margin-bottom: 54px;
+
+  @media (min-width: $tablet-S) {
+    margin-bottom: 65px;
+    padding-left: 30px;
+  }
+
+  @media (min-width: $tablet-M) {
+    margin-bottom: 85px;
+    padding-left: 50px;
+  }
+
+  @media (min-width: $desktop-L) {
+    padding-left: 60px;
+    margin-bottom: 97px;
+  }
+
+  &::after {
+    @media (min-width: $tablet-M) {
+      @include size(41px);
+
+      content: "";
+      position: absolute;
+      z-index: 10;
+      top: 68px;
+      right: 50px;
+      background-image: url("/img/arrows-icon.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    @media (min-width: $desktop-L) {
+      top: 127px;
+    }
+  }
+}
+
+.staff__title {
+  margin-bottom: 27px;
+  width: 91%;
+
+  @media (min-width: $desktop-L) {
+    margin-bottom: 52px;
+  }
+}
+
+.staff__slider {
+  position: relative;
+  z-index: 1;
+  padding: 33px 20px 50px 21px;
+  background-color: $white;
+
+  @media (min-width: $tablet-M) {
+    padding-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-L) {
+    padding: 43px 20px 65px 50px;
+  }
+}
+
+.staff__slider.slick-slider .slick-dots {
+  bottom: 10px;
+  left: -2px;
+}
+
+.staff__slider .slick-dots li.slick-active button:before,
+.staff__slider .slick-dots li button:before {
+  color: $blue;
+}
+
+.staff__description-header {
+  @include mp-zero;
+  @include font(14px);
+
+  position: relative;
+  margin-bottom: 35px;
+
+  @media (min-width: $desktop-L) {
+    margin-bottom: 53px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  &::after {
+    @include size(1080px, 32px);
+
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: -7px;
+    background-image: url("/img/divider.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $desktop-L) {
+      bottom: -24px;
+      width: 1087px;
+      height: 43px;
+    }
+  }
+}
+
+.staff__description {
+  @include mp-zero;
+}
+

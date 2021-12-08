@@ -1,0 +1,15 @@
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo__img {
+  @media (min-width: $tablet-M) {
+    width: 150px;
+  }
+
+  @media (min-width: $desktop-L) {
+    @include size(170px, 70px);
+  }
+}

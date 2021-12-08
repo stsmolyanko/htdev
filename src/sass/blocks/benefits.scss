@@ -1,0 +1,152 @@
+.benefits {
+  position: relative;
+  z-index: 10;
+  margin-top: 5px;
+
+  @media (min-width: $tablet-M) {
+    &::after {
+      @include size(41px);
+
+      content: "";
+      position: absolute;
+      z-index: 10;
+      bottom: 49px;
+      left: 50px;
+      background-image: url("/img/arrows-icon.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
+
+.benefits__title {
+  margin-bottom: 189px;
+  padding-left: 30px;
+  width: 220px;
+  width: 85%;
+
+  @media (min-width: $tablet-M) {
+    margin-bottom: 50px;
+    padding-left: 186px;
+  }
+
+  @media (min-width: $desktop-L) {
+    padding-left: 330px;
+  }
+}
+
+.benefits__slider {
+  @include size(93.5%, 202px);
+
+  position: absolute;
+  z-index: 1;
+  top: 11.5%;
+  left: 0;
+
+  @media (min-width: $tablet-S) {
+    @include size(90%, 350px);
+
+    top: 110px;
+  }
+
+  @media (min-width: $tablet-M) {
+    @include size(80%, 400px);
+  }
+
+  @media (min-width: $desktop-L) {
+    @include size(64%, 579px);
+
+    top: 140px;
+  }
+}
+
+.benefits__slider.slick-slider .slick-dots {
+  bottom: 45px;
+  left: -2px;
+
+  /* Дополнительный media для слайдера в benefits,
+  чтобы пагинация не скрывалась за плашкой с текстом */
+
+  @media (min-width: 335px) {
+    bottom: 65px;
+  }
+
+  @media (min-width: $tablet-S) {
+    left: -155px;
+    bottom: 23px;
+  }
+}
+
+.benefits__list {
+  @include mp-zero;
+
+  position: relative;
+  z-index: 1;
+  margin-left: 20px;
+  padding: 29px 18px 30px 40px;
+  list-style: none;
+  background-color: $white;
+
+  @media (min-width: $tablet-S) {
+    margin-left: 240px;
+  }
+
+  @media (min-width: $tablet-M) {
+    padding: 40px 20px 30px 50px;
+    margin-left: 480px;
+  }
+
+  @media (min-width: $desktop-L) {
+    margin-left: 780px;
+    padding: 48px 50px 58px 74px;
+  }
+}
+
+.benefits__benefit-item {
+  position: relative;
+  margin-bottom: 8px;
+
+  @media (min-width: $desktop-L) {
+    margin-bottom: 10px;
+  }
+
+  &::before {
+    @include size(12px, 1px);
+
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: -20px;
+    background-color: $blue;
+
+    @media (min-width: $desktop-L) {
+      @include size(16px, 2px);
+      top: 12px;
+      left: -24px;
+    }
+  }
+}
+
+.benefits__benefit-item:last-child {
+  margin-bottom: 0;
+}
+
+.benefits__bg-shape {
+  @include size(20px, 1070px);
+
+  position: absolute;
+  z-index: 0;
+  top: -21px;
+  left: -11px;
+  border: 1px solid $middle-gray;
+
+  @media (min-width: $tablet-M) {
+    width: 150px;
+  }
+
+  @media (min-width: $desktop-L) {
+    top: -40px;
+    width: 309px;
+  }
+}
+

@@ -1,0 +1,29 @@
+.header {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 12px;
+  padding-top: 13px;
+  padding-bottom: 20px;
+  background-color: $white;
+
+  @media (min-width: $tablet-S) {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+  }
+
+  @media (min-width: $desktop-L) {
+    padding: 25px 56px 25px 50px;
+  }
+}
+
+.header__login {
+  display: none;
+
+  @media (min-width: $tablet-S) {
+    display: flex;
+  }
+}

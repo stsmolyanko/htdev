@@ -1,0 +1,110 @@
+.about {
+  position: relative;
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-S) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $tablet-M) {
+    margin-bottom: 130px;
+  }
+
+  @media (min-width: $desktop-L) {
+    margin-bottom: 163px;
+  }
+}
+
+.about__bg-image {
+  @include size(93.5%, 174px);
+
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-image: url("/img/about-bg.jpg");
+  background-position: 0 0;
+  background-size: cover;
+
+  @media (min-width: $tablet-S) {
+    @include size(90%, 410px);
+
+    background-position: right;
+  }
+
+  @media (min-width: $tablet-M) {
+    @include size(80%, 440px);
+  }
+
+  @media (min-width: $desktop-L) {
+    @include size(73.6%, 570px);
+  }
+}
+
+.about__description-wrapper {
+  display: inline-block;
+  position: relative;
+  z-index: 10;
+  margin-right: 20px;
+  margin-top: 134px;
+  padding: 34px 18px 40px 21px;
+  background-color: $white;
+
+  @media (min-width: $tablet-S) {
+    margin-right: 150px;
+    padding-left: 30px;
+  }
+
+  @media (min-width: $tablet-M) {
+    margin-right: 430px;
+    margin-top: 43px;
+    padding: 40px 40px 30px 50px;
+  }
+
+  @media (min-width: $desktop-L) {
+    margin-right: 700px;
+    margin-top: 65px;
+    padding: 48px 40px 52px 60px;
+  }
+}
+
+.about__title {
+  margin-bottom: 13px;
+
+  @media (min-width: $desktop-L) {
+    margin-bottom: 18px;
+  }
+}
+
+.about__description-item {
+  @include mp-zero;
+
+  margin-bottom: 8px;
+
+  @media (min-width: $desktop-L) {
+    margin-bottom: 10px;
+  }
+}
+
+.about__description-item:last-child {
+  margin-bottom: 0;
+}
+
+.about__bg-shape {
+  @include size(100%, 165%);
+
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 10px;
+  border-left: 1px solid $middle-gray;
+
+  @media (min-width: $tablet-M) {
+    left: 150px;
+  }
+
+  @media (min-width: $desktop-L) {
+    left: 299px;
+  }
+}
+

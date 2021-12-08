@@ -1,0 +1,14 @@
+.title {
+  @include mp-zero;
+  @include font(24px, 28px, 600);
+
+  color: $blue;
+
+  @media (min-width: $tablet-S) {
+    @include font(28px, 28px, 600)
+  }
+
+  @media (min-width: $desktop-L) {
+    @include font(32px, 38px, 600);
+  }
+}

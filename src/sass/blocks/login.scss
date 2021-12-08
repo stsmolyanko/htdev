@@ -1,0 +1,20 @@
+
+.login-button {
+  @media (min-width: $tablet-S) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.login-button__img {
+  fill: $dark-gray;
+
+  &:hover path {
+    fill: $blue;
+  }
+
+  @media (min-width: $tablet-M) {
+    @include size(28px)
+  }
+}
