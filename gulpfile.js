@@ -69,6 +69,10 @@ const styles = () => {
 
 exports.styles = styles;
 
+
+
+// Styles Minify
+
 const stylesMinify = () => {
   return gulp.src("src/sass/style.scss")
     .pipe(sass())
@@ -82,8 +86,6 @@ const stylesMinify = () => {
 }
 
 exports.stylesMinify = stylesMinify;
-
-
 
 
 
@@ -120,12 +122,6 @@ const scripts = () => {
 
 exports.scripts = scripts;
 
-// const sliderFilesCopy = () => {
-//   return gulp.src("src/js/slick/fonts/slick.woff")
-//     .pipe(gulp.dest("build/css/fonts/"))
-// }
-
-// exports.sliderFilesCopy = sliderFilesCopy;
 
 
 // Server
