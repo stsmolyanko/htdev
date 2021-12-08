@@ -28,7 +28,7 @@
       z-index: 10;
       top: 68px;
       right: 50px;
-      background-image: url("/img/arrows-icon.svg");
+      background-image: url("../img/arrows-icon.svg");
       background-repeat: no-repeat;
       background-position: center;
     }
@@ -93,7 +93,7 @@
     position: absolute;
     bottom: -20px;
     left: -7px;
-    background-image: url("/img/divider.svg");
+    background-image: url("../img/divider.svg");
     background-repeat: no-repeat;
 
     @media (min-width: $desktop-L) {

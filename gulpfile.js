@@ -110,8 +110,10 @@ const scripts = () => {
     .pipe(gulp.src([
       "src/js/slick/fonts/slick.woff",
       "src/js/slick/fonts/slick.ttf",
-    ]))
-
+    ], {
+      base: "src"
+    }))
+    .pipe(rename({dirname: ""}))
     .pipe(gulp.dest("build/css/fonts"))
 
     .pipe(gulp.src("src/js/slick/ajax-loader.gif"))
