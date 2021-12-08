@@ -220,7 +220,7 @@ img {
   z-index: 1;
   top: 0;
   right: 0;
-  background-image: url("/img/about-bg.jpg");
+  background-image: url("../img/about-bg.jpg");
   background-position: 0 0;
   background-size: cover;
 }
@@ -348,7 +348,7 @@ img {
     position: absolute;
     bottom: 170px;
     right: 50px;
-    background-image: url("/img/arrows-icon.svg");
+    background-image: url("../img/arrows-icon.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -816,7 +816,7 @@ img {
   z-index: 0;
   bottom: 0;
   right: 0;
-  background-image: url("/img/features-bg.jpg");
+  background-image: url("../img/features-bg.jpg");
   background-position: 0 0;
   background-size: cover;
 }
@@ -905,7 +905,7 @@ img {
     z-index: 10;
     top: 68px;
     right: 50px;
-    background-image: url("/img/arrows-icon.svg");
+    background-image: url("../img/arrows-icon.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -976,7 +976,7 @@ img {
   position: absolute;
   bottom: -20px;
   left: -7px;
-  background-image: url("/img/divider.svg");
+  background-image: url("../img/divider.svg");
   background-repeat: no-repeat;
 }
 @media (min-width: 1340px) {
@@ -1006,7 +1006,7 @@ img {
     z-index: 10;
     bottom: 49px;
     left: 50px;
-    background-image: url("/img/arrows-icon.svg");
+    background-image: url("../img/arrows-icon.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
